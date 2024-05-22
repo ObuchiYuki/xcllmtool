@@ -1,7 +1,6 @@
-import pandas as pd
-
-df = pd.read_csv('locale_table.tsv', sep='\t')
-df['Code'] = df['Code'].str.lower()
-locale_table_dict = df.set_index('Code')['Name'].to_dict()
-
-print(locale_table_dict)
+import sys
+from xcllmtool import XCLLMTool
+  
+if __name__ == "__main__":
+    tool = XCLLMTool()
+    tool.run(sys.argv[1:])

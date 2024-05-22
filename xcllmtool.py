@@ -102,7 +102,4 @@ class XCLLMTool:
             logger.error(str(e))
             sys.exit(1)
 
-        
-if __name__ == "__main__":
-    tool = XCLLMTool()
-    tool.run(sys.argv[1:])
+      
