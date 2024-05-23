@@ -6,6 +6,7 @@ from typing import Literal, TypeAlias, Generator
 from util.logger import Logger
 
 XCStringUnitState: TypeAlias = Literal['translated', 'needs_review', "new"]
+
 def cast_XCStringUnitState(value: str) -> XCStringUnitState:
     if value in ['translated', 'needs_review', 'new']:
         return value # type: ignore
@@ -13,6 +14,7 @@ def cast_XCStringUnitState(value: str) -> XCStringUnitState:
         raise ValueError(f'Invalid value for XCStringUnitState: {value}')
 
 XCStringExtractionState: TypeAlias = Literal['stale', "extracted_with_value", "manual"]
+
 def cast_XCStringExtractionState(value: str) -> XCStringExtractionState:
     if value in ['stale', 'extracted_with_value', "manual"]:
         return value # type: ignore
@@ -33,7 +35,7 @@ class XCStringUnit:
         }
 
     @staticmethod
-    def load(data: dict) -> 'XCStringUnit':
+    def from_dict(data: dict) -> 'XCStringUnit':
         if "state" not in data:
             raise ValueError('state is required', data)
         
@@ -62,12 +64,12 @@ class XCStringDeviceVariation:
         }
 
     @staticmethod
-    def load(data: dict) -> 'XCStringDeviceVariation':
+    def from_dict(data: dict) -> 'XCStringDeviceVariation':
         variations: dict[str, XCStringUnit] = {}
         for key, value in data.items():
             if not isinstance(value, dict):
                 raise ValueError('variation values must be dictionaries')
-            variations[key] = XCStringUnit.load(value["stringUnit"])
+            variations[key] = XCStringUnit.from_dict(value["stringUnit"])
 
         return XCStringDeviceVariation(variations)
 
@@ -87,7 +89,7 @@ class XCStringEntry:
         }
 
     @staticmethod
-    def load(data: dict, logger: Logger | None = None) -> 'XCStringEntry':
+    def from_dict(data: dict, logger: Logger | None = None) -> 'XCStringEntry':
         localizations_data = data['localizations']
         if not isinstance(localizations_data, dict):
             raise ValueError('localizations must be a dictionary')
@@ -119,9 +121,9 @@ class XCStringEntry:
                         device_data = entry['device']
                         if not isinstance(device_data, dict):
                             raise ValueError('device must be a dictionary')
-                        localizations[locale] = XCStringDeviceVariation.load(device_data)
+                        localizations[locale] = XCStringDeviceVariation.from_dict(device_data)
                 elif key == "stringUnit":
-                    localizations[locale] = XCStringUnit.load(entry)
+                    localizations[locale] = XCStringUnit.from_dict(entry)
                 else:
                     if logger is not None:
                         logger.warn(f'Unknown localization type: {key}')
@@ -259,7 +261,7 @@ class XCStrings:
             raise ValueError('strings must be a dictionary')
 
         for key, string in strings_data.items():
-            strings[key] = XCStringEntry.load(string, logger)
+            strings[key] = XCStringEntry.from_dict(string, logger)
 
         version = data.get('version', None)
         if not isinstance(version, str):
