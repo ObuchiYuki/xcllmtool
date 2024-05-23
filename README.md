@@ -14,22 +14,20 @@ The `xcllmtool` is a tool that automatically translates `xcstrings` files using 
 python main.py [source_xcstrings] \
 --api-key "sk-proj-xxxxxxxxxxxxxxxxxxxxxxxx" \
 --source en \
---target jp
+--target ja
 ```
 
 By default, `Localizable.xcstrings` will be translated to `Localizable.translated.xcstrings`.
 
 If `--override` is specified, the file will be overwritten.
 
-
-
 ## Options
 
 ###### Required
 
 - `--api-key`: Open AI API Key
-- `-s` `--source`: Source language locale code (like `en`, `jp`, `zh-Hans`... )
-- `-t` `--target`: Target language locale code (like `en`, `jp`, `zh-Hans`... )
+- `-s` `--source`: Source language locale code (like `en`, `ja`, `zh-Hans`... )
+- `-t` `--target`: Target language locale code (like `en`, `ja`, `zh-Hans`... )
 
 ###### Optional
 

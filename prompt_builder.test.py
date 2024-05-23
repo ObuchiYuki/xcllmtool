@@ -25,12 +25,13 @@ class TestPromptBuilder(unittest.TestCase):
         }
         """
 
-        xcstrings = XCStrings.load_from_json(json.loads(sample_json), logger=Logger())
+        xcstrings = XCStrings.from_json(json.loads(sample_json), logger=Logger())
 
         config = PromptBuilderConfig(
             system_prompt="System Prompt", 
             batch_char_limit=100, 
             source_locale="en",
+            target_locale="ja",
             source_device=None,
             separator="\n----\n",
             prefix="- "

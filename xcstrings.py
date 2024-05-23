@@ -87,7 +87,7 @@ class XCStringEntry:
         }
 
     @staticmethod
-    def load(data: dict, logger: Logger) -> 'XCStringEntry':
+    def load(data: dict, logger: Logger | None = None) -> 'XCStringEntry':
         localizations_data = data['localizations']
         if not isinstance(localizations_data, dict):
             raise ValueError('localizations must be a dictionary')
@@ -123,7 +123,10 @@ class XCStringEntry:
                 elif key == "stringUnit":
                     localizations[locale] = XCStringUnit.load(entry)
                 else:
-                    logger.warn(f'Unknown localization type: {key}')
+                    if logger is not None:
+                        logger.warn(f'Unknown localization type: {key}')
+                    else:
+                        print(f'Unknown localization type: {key}')
 
         return XCStringEntry(localizations=localizations, extraction_state=extraction_state, comment=comment)
     
@@ -156,6 +159,11 @@ class XCStrings:
                     devices = [device] if device is not None else localization.variations.keys()
                     for device in devices:
                         yield XCStringKeyPath(key, locale, device)
+
+    def remove_locale(self, locale: str) -> None:
+        for _, entry in self.strings.items():
+            if locale in entry.localizations:
+                del entry.localizations[locale]
 
     def has_entry(self, keypath: XCStringKeyPath) -> bool:
         if keypath.key not in self.strings:
@@ -237,7 +245,7 @@ class XCStrings:
         }
 
     @staticmethod
-    def load_from_dict(data: dict, logger: Logger) -> 'XCStrings':
+    def from_dict(data: dict, logger: Logger | None = None) -> 'XCStrings':
         sourceLanguage: str
         strings: dict[str, XCStringEntry] = {}
         
@@ -260,11 +268,11 @@ class XCStrings:
         return XCStrings(sourceLanguage, strings, version)
 
     @staticmethod
-    def load_from_json(data: str, logger: Logger) -> 'XCStrings':
-        return XCStrings.load_from_dict(json.loads(data), logger)
+    def from_json(data: str, logger: Logger | None = None) -> 'XCStrings':
+        return XCStrings.from_dict(json.loads(data), logger)
 
     @staticmethod
-    def load_from_path(path: PathLike, logger: Logger) -> 'XCStrings':
+    def from_path(path: PathLike, logger: Logger | None = None) -> 'XCStrings':
         with open(path, 'r') as f:
-            return XCStrings.load_from_dict(json.load(f), logger)
+            return XCStrings.from_dict(json.load(f), logger)
             

@@ -61,7 +61,7 @@ class TestXCStrings(unittest.TestCase):
         }
         """
 
-        xcstrings = XCStrings.load_from_json(
+        xcstrings = XCStrings.from_json(
             json.loads(sample_json), logger=Logger()
         )
 
@@ -107,7 +107,7 @@ class TestXCStrings(unittest.TestCase):
         }
         """
 
-        xcstrings = XCStrings.load_from_json(
+        xcstrings = XCStrings.from_json(
             json.loads(sample_json), logger=Logger()
         )
 

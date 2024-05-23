@@ -1,0 +1,2610 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    ".apptitle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "KURURI AI",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "value": "くるりAI",
+                  "state": "needs_review"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "value": "くるりAI",
+                  "state": "translated"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "KURURI AI",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    ".version": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Version %@",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "バージョン %@",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "版本 %@",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.cancel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Cancel",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "キャンセル",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "取消",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.delete": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Delete",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "削除",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "删除",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.deselect_all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Deselect",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "選択解除",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "取消选择",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.error": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Error",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "エラー",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "错误",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.no_license": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "License not Found.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "ライセンスが見つかりません。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "未找到许可证",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.no_photos": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "No Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真がありません",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.ok": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "OK",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "OK",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "确定",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "common.select_all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Select All",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "全選択",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "全选",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.can_not_revert": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Unable to Restore Image",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像を元に戻せませんでした",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无法还原图像",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.can_not_rotate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Could Not Rotate Image",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像を回転できませんでした",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无法旋转图像",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.discard_change": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Undo Changes",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "変更を元に戻す",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "撤销更改",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.rotate_left": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotate Left",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "左に回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "向左旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.rotate_right": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotate Right",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "右に回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "向右旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.rotate_upside_down": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotate Vertically",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "上下に回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "垂直旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "manual_rotate.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotate Manually",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "手動で回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "手动旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.ai_load_failed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "AI Loading Failed",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIの読み込みに失敗しました",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "AI加载失败",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.ai_load_failed.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Please Restart the App",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "アプリを再起動してください",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "请重启应用程序",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.album": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Albums",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "アルバム",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "相册",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.all_photos": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "All Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "すべての写真",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "所有照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.empty_selection": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Select at least one image",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像を選択して下さい",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "请至少选择一张图片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.loading_ai": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Preparing AI...",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIを準備しています...",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "正在准备 AI...",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.loading_ai.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Subsequent Launches Will Be Faster.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "2回目以降は高速起動します。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "后续启动将会更快。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.open_setting": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Cannot access the photo library.  Please allow 'Full Access' to photos in settings.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "フォトライブラリにアクセスできません。 設定から写真の「フルアクセス」を許可してください。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无法访问照片库。请在设置中允许对照片的“完全访问权”。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photo_select.start_rotate_with_photo_number": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Analyze %@ Images with AI",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "%@枚の画像をAIで判定する",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "使用 AI 分析 %@ 图像",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Your iPhone May Get Warm During Processing.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "処理中はiPhoneが熱くなる事があります。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "处理期间您的 iPhone 可能会变热。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.progress.calculating_remaining_time": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Calculating Remaining Time...",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "残り時間を計算しています...",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "正在计算剩余时间...",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.progress.estimated_remaining_time": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Remaining Time: %@",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "残り%@",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "剩余时间：%@",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.progress.progress_title(remaining: %@, percentage: %lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Remaining %@... (%lld%%)",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "残り%@枚... (%lld%%)",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "剩余 %@...（%lld%%）",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.stop": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Stop",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "停止",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "停止",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.stop_confirm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Are you sure you want to stop the process?",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "処理を停止してもよろしいですか？",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "您确定要停止过程吗？",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "photorotate.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Correcting photo orientation",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真の向きを直しています",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "正在纠正照片方向",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "prediction_test.error.check_image_not_found": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Prediction test image not found.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIテスト用の写真が見つかりません。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "找不到预测测试图像。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "prediction_test.error.invalid_prediction(message: %@)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Invalid Prediction: %@",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIモデルの出力が正しくありません。(%@)",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无效预测：%@",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "prediction_test.error.model_crashed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Prediction model crashed while loading.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIがクラッシュしました。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "预测模型加载时崩溃。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "prediction_test.error.model_is_not_real_model": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Prediction model is not real model. (DEBUG model is used.)",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIモデルが正しくありません。（デバッグモデルが使われているようです）",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "预测模型不是真实模型。（使用的是DEBUG模型。）",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.rotated_items": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotated Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "変更した写真",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "旋转照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.rotated_items_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotated - %@ Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "回転した写真 - %@枚",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "旋转 - %@ 张照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.rotated_items.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "If the orientation is incorrect, correct from here",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "変更された向きが間違っている場合はここから修正",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "如果方向不正确，请从这里开始更正",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.rotated_items.show_all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Show All",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "すべて表示",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "显示全部",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.share_text": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotated %@ out of %@ photos with KURURI AI!  https://apps.apple.com/app/id6480589907\n\n#KURURIAI",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "くるりAIで%@枚の写真中、%@枚の写真を回転しました！\n\nhttps://apps.apple.com/app/id6480589907\n\n#KURURIAI",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "使用KURURI AI旋转了 %@ 张照片，共 %@ 张！  https://apps.apple.com/app/id6480589907\n\n#KURURIAI",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Changes Complete",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "変更完了",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "更改完成",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.unpredicateable_items": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Unrecognizable",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "判断できない写真",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无法识别",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.unpredicateable_items_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Unrecognizable - %@ Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "判断できない写真 - %@枚",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无法识别 - %@ 张照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "rotate_result.unpredicateable_items.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "To manually adjust orientation, correct from here",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "手動で向きを直す場合はここから修正",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "若要手动调整方向，请从这里开始更正",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.accuracy": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Accuracy",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "認識の精度",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "精确度",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.footer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Increasing the threshold improves accuracy but reduces the number of items recognized.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "しきい値を上げると、精度が上がりますが、認識できる個数が少なくなります。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "提高阈值可以提升精确度，但会减少识别的项目数量。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.high": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "High",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "高",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "高",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Recognition",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "認識の状態",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "识别",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.low": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Low",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "低",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "低",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.medium": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Medium",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "普通",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "中等",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.quantity": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Quantity",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "認識できる量",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "数量",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Accuracy Threshold",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "精度しきい値",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "精确度阈值",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.very_high": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Very High",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "とても高い",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "非常高",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.accuracy_level.very_low": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Very Low",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "とても低い",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "非常低",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.detailsetting": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Advanced Settings",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "詳細設定",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "高级设置",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.adjusted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Adjusted Photo",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "編集適応後の写真",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "调整后的照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.adjusted.short": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Adjusted",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "編集適応後",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "调整",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.editingmode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Photos to Rotate",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像の入力ソース",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "要旋转的照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.footer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Choose whether to rotate the photo based on the editing status in other apps.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真を他アプリの編集状況を踏まえて回転させるかを選択します。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "根据其他应用中的编辑状态选择是否旋转照片。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.original": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Original Photo",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "オリジナルの写真",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "原始照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.editingmode.original.short": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Original",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "オリジナル",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "原图",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.cross_check": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Cross-Check",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "クロスチェック",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "交叉检查",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.cross_check.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Two AI cross-check will be conducted for enhanced rotation accuracy.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "2つのAIによるクロスチェックを行います。回転の精度が向上します。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "将进行两次AI交叉检查，以提高旋转精度。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.prediction_mode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Recognition",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "回転方向の認識",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "识别",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.preview.ai": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "AI",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIによる判定",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "人工智能",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.preview.photos": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Photo",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.preview.rotation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotation",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像の回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.single_check": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Single Check",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "シングルチェック",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "单次检查",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.prediction_mode.single_check.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotate the image with a single AI decision. This allows for more photos to be rotated.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "1つのAIによる判定のみで画像を回転させます。より多くの写真を回転できます。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "通过单一AI决策旋转图片。这将允许更多照片被旋转。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.cache_size": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Cache Size",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "キャッシュサイズ",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "缓存大小",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.cleaning": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Deleting...",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "削除中...",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "删除中...",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.clear_cache": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Clear Cache",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "キャッシュを削除",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "清除缓存",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.clear_cache_confirm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Would you like to clear the cache?",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "キャッシュを削除しますか？",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "您想清除缓存吗？",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.computing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Calculating...",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "計算中...",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "计算中...",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.no_reverted_photo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "No Rotated Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "回転した写真はありません",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "无旋转照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.reset_setting": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Reset Settings",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "設定をリセット",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "重置设置",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.reset_setting_confirm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Would you like to reset the settings?",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "設定をリセットしますか？",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "您想要重置设置吗？",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.revert_all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Revert to Original",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "すべて元に戻す",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "恢复到原始状态",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.revert_all_confirm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Do you want to revert the rotated photo to original?",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "回転済みの写真を元に戻しますか？",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "您要将旋转后的照片恢复为原始状态吗？",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.reverted_photo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Rotated Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "回転済みの写真",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "旋转的照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.reverted_photo_count": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "%@ Photos",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "%@枚",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "%@ 照片",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.reset.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Reset Settings and Contents",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "設定とコンテンツのリセット",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "重置设置和内容",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.revert.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Reverting Photo Orientation",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真の向きを戻しています",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "恢复照片方向",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.settings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Settings",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "設定",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "设置",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "settings.term_of_service": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Terms of Use",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "利用規約",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "使用条款",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "tab.auto_rotate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "AI Rotate",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AI回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "AI旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "tab.manual_rotate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Manual Rotate",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "手動回転",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "手动旋转",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "tab.settings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Settings",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "設定",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "设置",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "usernote.ai_miss.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Recognition of text is particularly challenging. Rotated photos will be presented together after processing, allowing you to make manual corrections.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "特に文字の認識は苦手です。回転した写真を処理後まとめて提示します。その際に手動で訂正ができます。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "文本识别尤其具有挑战性。处理后将展示旋转的照片，以便您进行手动纠正。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.ai_miss.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "AI might occasionally misinterpret the orientation",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "AIが向きの認識を間違えることがあります",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "AI有时可能会误解方向",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.confirm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Confirm",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "確認しました",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "确认",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "usernote.image_protect.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Photos are not uploaded to servers; all processing is completed on your iPhone.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "写真はサーバーにアップロードされず、処理はiPhoneの中で完結します。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "照片不会上传到服务器；所有处理都在您的iPhone上完成。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.image_protect.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Your images are protected",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "画像は保護されます",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "您的图片已受保护",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.no_screenshot.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Only photos taken with the iPhone camera or shared images are included.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "iPhoneカメラで撮影した写真や共有された画像が対象です",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "只包括用 iPhone 相机拍摄或共享的照片。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.no_screenshot.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Videos and screenshots are not included in the conversion",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "動画やスクリーンショットは変換に含まれません",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "视频和屏幕截图不包括在内",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.overheat.info": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "This is because it's possible to AI process all the photos in your Camera Roll at once.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "カメラロール全ての写真を一度にAI処理することが可能な仕様ため。",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "这是因为可以一次性对您相机卷中的所有照片进行 AI 处理。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "usernote.overheat.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Your iPhone may become warm during processing",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "処理中にiPhoneが熱くなる可能性があります",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "在处理过程中您的 iPhone 可能会变热",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "usernote.usernote": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Notes",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "確認事項",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "笔记",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "welcome.buy_kururi_ai": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Purchase KURURI AI",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "くるりAIを購入する",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "购买 KURURI AI",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "welcome.checking_device": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Determining if KURURI AI is Compatible with Your Device...",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "お使いのデバイスでくるりAIをご利用いただけるか判定しています...",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "正在确定 KURURI AI 是否与您的设备兼容...",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "welcome.continue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Continue",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "続ける",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "继续",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "welcome.device_not_supported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "We are sorry, but KURURI AI cannot operate on your device.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "申し訳ありませんが、ご利用のデバイスではくるりAIを動かすことができません。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "很抱歉，KURURI AI 无法在您的设备上运行。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    },
+    "welcome.device_supported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "KURURI AI is Compatible with Your Device.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "お使いのデバイスでくるりAIをご利用いただけます。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "KURURI AI 与您的设备兼容。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "welcome.device_supported_but_slow": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "KURURI AI is Compatible with Your Device. But Prediction is slow.",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "お使いのデバイスでくるりAIをご利用いただけますが、動作が遅い可能性があります。",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "KURURI AI 与您的设备兼容。但预测速度慢。",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "welcome.price_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "%@ - %@ Buyout",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "%@ - %@で買い切り",
+            "state": "translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "%@ - %@ 买断",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": null,
+      "comment": null
+    },
+    "welcome.welcome": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "value": "Welcome",
+            "state": "translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "value": "ようこそ",
+            "state": "needs_review"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "value": "欢迎",
+            "state": "needs_review"
+          }
+        }
+      },
+      "extractionState": "manual",
+      "comment": null
+    }
+  },
+  "version": "1.0"
+}

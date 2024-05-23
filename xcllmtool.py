@@ -82,7 +82,7 @@ class XCLLMTool:
             )
 
             translator = Translator(config=config, logger=logger)
-            xcstrings = XCStrings.load_from_path(source_path, logger=logger)
+            xcstrings = XCStrings.from_path(source_path, logger=logger)
             results = translator.translate(xcstrings)
 
             for result in results:
