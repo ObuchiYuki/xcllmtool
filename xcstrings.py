@@ -33,18 +33,39 @@ class XCStringUnit:
                 "state": self.state
             }
         }
+    
+    @staticmethod
+    def can_from_dict(data: dict) -> bool:
+        if "stringUnit" not in data:
+            return False
+        
+        string_unit_data = data["stringUnit"]
+        if not isinstance(string_unit_data, dict):
+            return False
+        
+        if "state" not in string_unit_data:
+            return False
+        
+        if "value" not in string_unit_data:
+            return False
+        
+        return True
 
     @staticmethod
     def from_dict(data: dict) -> 'XCStringUnit':
-        if "state" not in data:
-            raise ValueError('state is required', data)
+        if "stringUnit" not in data:
+            raise ValueError('stringUnit is required', data)
         
-        state_data = data["state"]
+        string_unit_data = data.get("stringUnit", None)
+        if not isinstance(string_unit_data, dict):
+            raise ValueError('stringUnit must be a dictionary', data)
+        
+        state_data = string_unit_data.get("state", None)
         if not isinstance(state_data, str):
             raise ValueError('state must be a string', data)
         state = cast_XCStringUnitState(state_data)
-
-        value_data = data["value"]
+    
+        value_data = string_unit_data.get("value", None)
         if not isinstance(value_data, str):
             raise ValueError('value must be a string')
         
@@ -52,26 +73,53 @@ class XCStringUnit:
 
 @dataclass
 class XCStringDeviceVariation:
-    variations: dict[str, XCStringUnit]
+    devices: dict[str, XCStringUnit]
 
     def to_dict(self) -> dict:
         return {
             "variations": {
                 "device": {
-                    device: variation.to_dict() for device, variation in self.variations.items()
+                    device: variation.to_dict() for device, variation in self.devices.items()
                 }
             }
         }
 
     @staticmethod
-    def from_dict(data: dict) -> 'XCStringDeviceVariation':
-        variations: dict[str, XCStringUnit] = {}
-        for key, value in data.items():
-            if not isinstance(value, dict):
-                raise ValueError('variation values must be dictionaries')
-            variations[key] = XCStringUnit.from_dict(value["stringUnit"])
+    def can_from_dict(data: dict) -> bool:
+        if "variations" not in data:
+            return False
+        
+        variations_data = data["variations"]
+        if not isinstance(variations_data, dict):
+            return False
+        
+        if "device" not in variations_data:
+            return False
+        
+        return True
 
-        return XCStringDeviceVariation(variations)
+    @staticmethod
+    def from_dict(data: dict) -> 'XCStringDeviceVariation':
+        if "variations" not in data:
+            raise ValueError('variations is required')
+        
+        variations_data = data["variations"]
+        if not isinstance(variations_data, dict):
+            raise ValueError('variations must be a dictionary')
+        
+        device_data = variations_data.get("device", None)   
+        if not isinstance(device_data, dict):
+            raise ValueError('device must be a dictionary')
+        
+        device: dict[str, XCStringUnit] = {}
+
+        for device_name, variation_data in device_data.items():
+            if not isinstance(variation_data, dict):
+                raise ValueError('variation must be a dictionary')
+            
+            device[device_name] = XCStringUnit.from_dict(variation_data)
+
+        return XCStringDeviceVariation(device)
 
 @dataclass
 class XCStringEntry:
@@ -97,40 +145,27 @@ class XCStringEntry:
         extraction_state_data = data.get('extractionState', None)
         if extraction_state_data is not None and not isinstance(extraction_state_data, str):
             raise ValueError('extractionState must be a string or null')
-        
         extraction_state = cast_XCStringExtractionState(extraction_state_data) if extraction_state_data is not None else None
 
         comment_data = data.get('comment', None)
         if comment_data is not None and not isinstance(comment_data, str):
             raise ValueError('comment must be a string or null')
-        
-        comment = comment_data
-
+    
         localizations: dict[str, XCStringUnit | XCStringDeviceVariation] = {}
 
         for locale, value in localizations_data.items():
             if not isinstance(value, dict):
                 raise ValueError('localizations values must be dictionaries')
             
-            for key, entry in value.items():
-                if key == "variations":
-                    if not isinstance(entry, dict):
-                        raise ValueError('variations must be a dictionary')
-                    
-                    if "device" in entry:
-                        device_data = entry['device']
-                        if not isinstance(device_data, dict):
-                            raise ValueError('device must be a dictionary')
-                        localizations[locale] = XCStringDeviceVariation.from_dict(device_data)
-                elif key == "stringUnit":
-                    localizations[locale] = XCStringUnit.from_dict(entry)
-                else:
-                    if logger is not None:
-                        logger.warn(f'Unknown localization type: {key}')
-                    else:
-                        print(f'Unknown localization type: {key}')
+            if XCStringUnit.can_from_dict(value):
+                localizations[locale] = XCStringUnit.from_dict(value)
+            elif XCStringDeviceVariation.can_from_dict(value):
+                localizations[locale] = XCStringDeviceVariation.from_dict(value)
+            else:
+                if logger is not None:
+                    logger.warn(f'Unknown localization type for {locale}')
 
-        return XCStringEntry(localizations=localizations, extraction_state=extraction_state, comment=comment)
+        return XCStringEntry(localizations=localizations, extraction_state=extraction_state, comment=comment_data)
     
 @dataclass
 class XCStringKeyPath:
@@ -158,7 +193,7 @@ class XCStrings:
                 if isinstance(localization, XCStringUnit):
                     yield XCStringKeyPath(key, locale)
                 elif isinstance(localization, XCStringDeviceVariation):
-                    devices = [device] if device is not None else localization.variations.keys()
+                    devices = [device] if device is not None else localization.devices.keys()
                     for device in devices:
                         yield XCStringKeyPath(key, locale, device)
 
@@ -194,9 +229,9 @@ class XCStrings:
         else:
             if not isinstance(localization, XCStringDeviceVariation):
                 raise ValueError('Device variation cannot be get from a string unit')
-            if keypath.device not in localization.variations:
+            if keypath.device not in localization.devices:
                 return None
-            return localization.variations[keypath.device].value
+            return localization.devices[keypath.device].value
 
     def set(self, keypath: XCStringKeyPath, value: str | None = None, state: XCStringUnitState | None = None) -> None:
         # If the key doesn't exist, create it
@@ -226,13 +261,13 @@ class XCStrings:
             if not isinstance(localization, XCStringDeviceVariation):
                 raise ValueError('Device variation cannot be set on a string unit')
             
-            if keypath.device not in localization.variations:
-                localization.variations[keypath.device] = XCStringUnit(value or '', state or 'needs_review')
+            if keypath.device not in localization.devices:
+                localization.devices[keypath.device] = XCStringUnit(value or '', state or 'needs_review')
             else:
                 if value is not None:
-                    localization.variations[keypath.device].value = value
+                    localization.devices[keypath.device].value = value
                 if state is not None:
-                    localization.variations[keypath.device].state = state
+                    localization.devices[keypath.device].state = state
 
     def to_json(self) -> str:
         return json.dumps(self.to_dict(), ensure_ascii=False, indent=2)

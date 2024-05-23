@@ -6,50 +6,50 @@ from xcstrings import XCStrings, XCStringUnit, XCStringDeviceVariation, XCString
 from util.logger import Logger
 
 class TestXCStrings(unittest.TestCase):
-    # def test_list_keypath(self):
-    #     sample_json = """
-    #     {
-    #       "sourceLanguage": "en",
-    #       "strings" : {
-    #         "title" : {
-    #           "localizations" : {
-    #             "en" : { "stringUnit" : { "state" : "translated", "value" : "Title" } },
-    #             "ja" : { "variations" : { "device" : { 
-    #               "iPhone" : { "state" : "translated", "value" : "タイトル 1" },
-    #               "iPad" : { "state" : "translated", "value" : "タイトル 2" }
-    #             } } }
-    #           }
-    #         }
-    #       }
-    #     }
-    #     """
+    def test_list_keypath(self):
+        sample_json = """
+        {
+            "sourceLanguage": "en",
+            "version": "1.0",
+            "strings" : {
+                "title" : {
+                    "localizations" : {
+                        "en" : { "stringUnit" : { "state" : "translated", "value" : "Title" } },
+                        "ja" : { "variations" : { "device" : { 
+                            "iPhone" : { "stringUnit": { "state" : "translated", "value" : "タイトル 1" } },
+                            "iPad" : { "stringUnit":  { "state" : "translated", "value" : "タイトル 2" } } 
+                        }}}
+                    }
+                }
+            }
+        }
+        """
 
-    #     xcstrings = XCStrings.load_from_json(
-    #         json.loads(sample_json), logger=Logger()
-    #     )
-    #     keypathes = list(xcstrings.list_keypath())
+        xcstrings = XCStrings.from_json(sample_json)
+        keypathes = list(xcstrings.list_keys())
 
-    #     self.assertEqual(len(keypathes), 3)
+        self.assertEqual(len(keypathes), 3)
         
-    #     en_key = keypathes[0]
-    #     self.assertEqual(en_key.key, "title")
-    #     self.assertEqual(en_key.locale, "en")
-    #     self.assertEqual(en_key.device, None)
+        en_key = keypathes[0]
+        self.assertEqual(en_key.key, "title")
+        self.assertEqual(en_key.locale, "en")
+        self.assertEqual(en_key.device, None)
 
-    #     ja_iphone_key = keypathes[1]
-    #     self.assertEqual(ja_iphone_key.key, "title")
-    #     self.assertEqual(ja_iphone_key.locale, "ja")
-    #     self.assertEqual(ja_iphone_key.device, "iPhone")
+        ja_iphone_key = keypathes[1]
+        self.assertEqual(ja_iphone_key.key, "title")
+        self.assertEqual(ja_iphone_key.locale, "ja")
+        self.assertEqual(ja_iphone_key.device, "iPhone")
 
-    #     ja_ipad_key = keypathes[2]
-    #     self.assertEqual(ja_ipad_key.key, "title")
-    #     self.assertEqual(ja_ipad_key.locale, "ja")
-    #     self.assertEqual(ja_ipad_key.device, "iPad")      
+        ja_ipad_key = keypathes[2]
+        self.assertEqual(ja_ipad_key.key, "title")
+        self.assertEqual(ja_ipad_key.locale, "ja")
+        self.assertEqual(ja_ipad_key.device, "iPad")      
 
     def test_load_from_json(self):
         sample_json = """
         {
             "sourceLanguage": "en",
+            "version": "1.0",
             "strings" : {
                 "title" : {
                     "localizations" : {
@@ -61,9 +61,7 @@ class TestXCStrings(unittest.TestCase):
         }
         """
 
-        xcstrings = XCStrings.from_json(
-            json.loads(sample_json), logger=Logger()
-        )
+        xcstrings = XCStrings.from_json(sample_json)
 
         self.assertEqual(xcstrings.source_language, "en")
         self.assertEqual(len(xcstrings.strings), 1)
@@ -93,23 +91,24 @@ class TestXCStrings(unittest.TestCase):
         sample_json = """
         {
             "sourceLanguage": "en",
+            "version": "1.0",
             "strings" : {
                 "title" : {
                     "localizations" : {
                         "en" : { "stringUnit" : { "state" : "translated", "value" : "Title" } },
-                        "ja" : { "variations" : { "device" : { 
-                            "iPhone" : { "state" : "translated", "value" : "タイトル 1" },
-                            "iPad" : { "state" : "translated", "value" : "タイトル 2" }
-                        } } }
+                        "ja" : { "variations" : { 
+                            "device" : {
+                                "iphone" : { "stringUnit" : { "state" : "needs_review", "value" : "KURURI KI" } },
+                                "other" : { "stringUnit" : { "state" : "needs_review", "value" : "KURURI KI" } }
+                            }
+                        }}
                     }
                 }
             }
         }
         """
 
-        xcstrings = XCStrings.from_json(
-            json.loads(sample_json), logger=Logger()
-        )
+        xcstrings = XCStrings.from_json(sample_json)
 
         self.assertEqual(xcstrings.source_language, "en")
         self.assertEqual(len(xcstrings.strings), 1)
@@ -132,22 +131,22 @@ class TestXCStrings(unittest.TestCase):
         self.assertTrue(isinstance(jp, XCStringDeviceVariation))
         jp_variation: XCStringDeviceVariation = cast(XCStringDeviceVariation, jp)
 
-        self.assertEqual(len(jp_variation.variations), 2)
-        self.assertIn("iPhone", jp_variation.variations)
-        self.assertIn("iPad", jp_variation.variations)
+        self.assertEqual(len(jp_variation.devices), 2)
+        self.assertIn("iphone", jp_variation.devices)
+        self.assertIn("other", jp_variation.devices)
 
-        iphone = jp_variation.variations["iPhone"]
+        iphone = jp_variation.devices["iphone"]
         self.assertTrue(isinstance(iphone, XCStringUnit))
         iphone_unit: XCStringUnit = cast(XCStringUnit, iphone)
 
-        self.assertEqual(iphone_unit.state, "translated")
-        self.assertEqual(iphone_unit.value, "タイトル 1")
+        self.assertEqual(iphone_unit.state, "needs_review")
+        self.assertEqual(iphone_unit.value, "KURURI KI")
 
-        ipad = jp_variation.variations["iPad"]
-        self.assertTrue(isinstance(ipad, XCStringUnit))
-        ipad_unit: XCStringUnit = cast(XCStringUnit, ipad)
-        self.assertEqual(ipad_unit.state, "translated")
-        self.assertEqual(ipad_unit.value, "タイトル 2")
+        other = jp_variation.devices["other"]
+        self.assertTrue(isinstance(other, XCStringUnit))
+        other_unit: XCStringUnit = cast(XCStringUnit, other)
+        self.assertEqual(other_unit.state, "needs_review")
+        self.assertEqual(other_unit.value, "KURURI KI")
 
         
         
